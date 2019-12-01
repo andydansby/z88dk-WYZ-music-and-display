@@ -23,23 +23,39 @@ uncompressing image files.
 
 Program flows like this:
 
-initilize loop tick
-disable interupts
-initilize WYZ player
-turn off player
-load song - uncompress song also in this step
+initilize loop tick.
 
-start endless loop
-  Play music
-  loop tick = 1 then Uncompress Image 0 (bank 0)
-  loop tick = 500 then Uncompress Image 1 (bank 1)
-  loop tick = 1000 then Uncompress Image 2 (bank 1)
-  loop tick = 1500 then Uncompress Image 3 (bank 6)
-  loop tick = 2000 then Uncompress Image 4 (bank 6)
-  loop tick = 2500 then Uncompress Image 5 (bank 6)
-  loop tick = 3000 then Uncompress Image 6 (bank 6)
-  loop tick = 3500 then restart loop tick
-  increase loop tick
-  pause 15 milliseconds (the ammount of time for any extra logic)
+disable interupts.
+
+initilize WYZ player.
+
+turn off player.
+
+load song - uncompress song also in this step.
+
+start endless loop.
+
+Play music.
+
+loop tick = 1 then Uncompress Image 0 (bank 0)
+
+loop tick = 500 then Uncompress Image 1 (bank 1)
+
+loop tick = 1000 then Uncompress Image 2 (bank 1)
+
+loop tick = 1500 then Uncompress Image 3 (bank 6)
+
+loop tick = 2000 then Uncompress Image 4 (bank 6)
+
+loop tick = 2500 then Uncompress Image 5 (bank 6)
+
+loop tick = 3000 then Uncompress Image 6 (bank 6)
+
+loop tick = 3500 then restart loop tick
+
+increase loop tick
+
+pause 15 milliseconds (the ammount of time for any extra logic)
+
 Go back to loop start
   
